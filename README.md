@@ -1,42 +1,40 @@
-# Teste de seleção para vaga de Java
+# Siga Bem
 
-## Faça um fork desse projeto e siga as instruções a seguir utilizando esse projeto.
+Presente projeto é uma aplicação backend em java spring. Foi empregado no desenvolvimento Lombok, Swagger e servidor H2. A aplicação já acompanha registros de teste.
 
-# Pré-requisitos
+## Getting Start
 
-Implementar apenas a API (Backend)
-Versão Java +8 (caso seja Java 8, verificar compatibilidade da sua IDE)
-Versão Spring Boot >= 2.4
-Banco de dados fica a seu critério (Sql, NoSql)
-Seu projeto deve obrigatoriamente ter as anotações: @Repository, @Entity e @Controller
-Documentação mínima da API (Swagger ou documento PDF)
+### Deploy
 
-# Objetivo
-Implementar para empresa de transporte de cargas SigaBem o endpoint para o cálculo do preço do frete:
+![Spring Tool](print/spring-tool.png)
 
-Você deve calcular o valor total do frete e a data prevista da entrega.
+### Swagger
 
-Considerar regras para calcular o valor do frete:
- * CEPs com DDDs iguais tem 50% de desconto no valor do frete e entrega prevista de 1 dia
- * CEPs de estados iguais tem 75% de desconto no valor do frete e entrega prevista de 3 dias
- * CEPs de estados diferentes não deve ser aplicado o desconto no valor do frete e entrega prevista de 10 dias
- * O valor do frete é cobrado pelo peso da encomenda, o valor para cada KG é R$1,00
+Para acessar a documentação swagger acesse esta URL: http://localhost:8080/swagger-ui/index.html
 
-Seu input de entrada deve ser “peso”, “cepOrigem”, “cepDestino” e “nomeDestinatario“
+![Swagger](print/swagger.png)
 
-Você utilizará a API gratuita de consulta de CEP abaixo: 
-Documentação da API: https://viacep.com.br/
-Exemplo do GET: https://viacep.com.br/ws/<CEP_A_CONSULTAR>/json/
+### H2
 
-Endpoint pode ser público
-Response/Output deve possuir: “vlTotalFrete” e “dataPrevistaEntrega”, “cepOrigem” e “cepDestino”
-Deve ser persistido no banco os valores da cotação os valores consultados: “peso”, “cepOrigem”, “cepDestino”, “nomeDestinatario”, “vlTotalFrete”, “dataPrevistaEntrega” e “dataConsulta”
+Para acessar o banco de dados H2: http://localhost:8080/h2-console/
 
+JDBC URL: **jdbc:h2:mem:sigabem**
 
+Nome do usuário: **sigabem**
 
-# Critérios de avaliação:
- * Implementação das regras de negócios para o cálculo do frete
- * Boas práticas de programação, arquitetura  e padrões de projetos
+![Login H2](print/login-h2.png)
 
-# Entrega: 
- * Disponibilizar um link do repositório no GitHub e encaminhar para developer@cd2.com.br
+![Console H2](print/console-h2.png)
+
+# Licença
+
+Este projeto está sob licença Apache 2.0 © 2022 Adriana Mirian Mendes Cardoso.
+Para mais informações acesse o arquivo :scroll: `LICENSE.md`.
+
+# Contato
+
+:email: E-Mail: ​[adrianamirianmc@gmail.com](adrianamirianmc@gmail.com)
+
+:clipboard: Linkedin: ​[https://www.linkedin.com/in/adriana-mirian-mendes-cardoso](https://www.linkedin.com/in/adriana-mirian-mendes-cardoso)
+
+:package: GitHub:  [https://github.com/AdrianaMendes](https://github.com/AdrianaMendes)
