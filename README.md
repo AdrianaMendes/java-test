@@ -1,40 +1,49 @@
 # Siga Bem
 
-Presente projeto é uma aplicação backend em java spring. Foi empregado no desenvolvimento Lombok, Swagger e servidor H2. A aplicação já acompanha registros de teste.
+O presente projeto é uma aplicação backend desenvolvida em Java com Spring Boot. Durante o desenvolvimento, foram utilizados Lombok, Swagger e o banco de dados em memória H2. A aplicação já inclui registros de teste para validação das funcionalidades.
+
+A aplicação calcula o frete com base no peso da encomenda e nos CEPs de origem e destino. Aplica descontos e prazos conforme DDD e estado, retornando o valor final do frete e a data estimada de entrega.
 
 ## Getting Start
 
 ### Deploy
 
-![Spring Tool](print/spring-tool.png)
+1. Clone o repositório:
+   ```bash
+   git clone git clone https://github.com/AdrianaMendes/java-test.git
+   ```
+
+2. Navegue até o diretório do projeto e execute:
+   ```bash
+   ./mvnw spring-boot:run
+   ```
+
+3. Acesse o sistema em:
+   ```
+   http://localhost:8080/swagger-ui/index.html
 
 ### Swagger
 
-Para acessar a documentação swagger acesse esta URL: http://localhost:8080/swagger-ui/index.html
-
 ![Swagger](print/swagger.png)
 
-### H2
+## Banco de dados
 
-Para acessar o banco de dados H2: http://localhost:8080/h2-console/
+- O projeto utiliza o **H2 Database** em memória.
+  ```
+  http://localhost:8080/h2-console
+  ```
+  - JDBC URL: `jdbc:h2:mem:sigabem`
+  - Usuário: `sigabem`
 
-JDBC URL: **jdbc:h2:mem:sigabem**
-
-Nome do usuário: **sigabem**
-
-![Login H2](print/login-h2.png)
-
-![Console H2](print/console-h2.png)
-
-# Licença
+## Licença
 
 Este projeto está sob licença Apache 2.0 © 2022 Adriana Mirian Mendes Cardoso.
 Para mais informações acesse o arquivo :scroll: `LICENSE.md`.
 
-# Contato
+## Contato
 
-:email: E-Mail: ​[adrianamirianmc@gmail.com](adrianamirianmc@gmail.com)
+**Adriana Cardoso**  
+Desenvolvedora Java | Spring Boot | Angular  
 
-:clipboard: Linkedin: ​[https://www.linkedin.com/in/adriana-mirian-mendes-cardoso](https://www.linkedin.com/in/adriana-mirian-mendes-cardoso)
-
-:package: GitHub:  [https://github.com/AdrianaMendes](https://github.com/AdrianaMendes)
+- [LinkedIn](https://www.linkedin.com/in/amendescardoso/)  
+- 📧 adrianamirianmc@gmail.com
