@@ -37,8 +37,7 @@ A aplicação calcula o frete com base no peso da encomenda e nos CEPs de origem
 
 ## Licença
 
-Este projeto está sob licença Apache 2.0 © 2022 Adriana Mirian Mendes Cardoso.
-Para mais informações acesse o arquivo :scroll: `LICENSE.md`.
+Este projeto está sob licença Apache 2.0 © 2022 Adriana Cardoso. Para mais informações acesse o arquivo :scroll: `LICENSE.md`.
 
 ## Contato
 
